@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/fonts/font-awesome.min.css" />
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <section class="aside content">
+        <div class="logo">
+          <h2>NGL</h2>
+          <h5>Neo Green Life</h5>
+        </div>
+        <aside>
+          <ul class="menu">
+            <li><i class="fas fa-dashboard"></i>Dashboard</li>
+            <li>
+              <div><i class="fas fa-comment-o"></i>Conversation</div>
+              <span class="conversation">8</span>
+            </li>
+            <li>
+              <div><i class="fas fa-"></i>Campaign</div>
+              <span class="campaign">13</span>
+            </li>
+            <li><i class="fas fa-calendar"></i>Calender</li>
+            <li><i class="fas fa-dashboard"></i>Analytics</li>
+            <li><i class="fas fa-meh-o"></i>Audience</li>
+            <li><i class="fas fa-cut"></i>Discounts</li>
+            <li><i class="fas fa-credit-card"></i>My Wallet</li>
+          </ul>
+          <ul class="settings">
+            <li><i class="fas fa-gear"></i>Settings</li>
+            <li><i class="fas fa-sign-out"></i>Logout</li>
+          </ul>
+        </aside>
+        <div class="theme content">
+          <i class="fas fa-sun-o active"></i>
+          <i class="fas fa-moon-o"></i>
+        </div>
+      </section>
+      <!-- Main Content -->
+      <section class="main-content">
+        <!-- First Class Colummn -->
+        <section class="first-class-row">
+          <section class="dashboard-head">
+            <div class="dashboard-user">
+              <img src="./images/swt-4.jpg" alt="" />
+              <div class="user-cmt">
+                <h3>Lavania</h3>
+                <p>Heyy, Nice Meeting You Guyys</p>
+              </div>
+            </div>
+            <form class="searchbar">
+              <i class="fas fa-search"></i>
+              <input
+                type="search"
+                placeholder="Search Here"
+                name="search"
+                id="search"
+              />
+            </form>
+            <div class="bell-notifier">
+              <div></div>
+              <i class="fas fa-bell-o fa-2x"></i>
+            </div>
+          </section>
+          <div class="user-balance">
+            <div class="user-active-balance">
+              <h3>TOTAL REVENUE</h3>
+              <div>
+                <span>$345 000</span> <i class="fas fa-money fa-2x"></i>
+              </div>
+            </div>
+            <div class="user-active-balance">
+              <h3>TOTAL CUSTOMER</h3>
+              <div>
+                <span>1789 Subscriber </span><i class="fas fa-meh-o fa-2x"></i>
+              </div>
+            </div>
+            <div class="user-active-balance">
+              <h3>ACTIVE ADS</h3>
+              <span>12 Active Ads</span>
+              <i class="fas fa-location-arrow fa-2x"></i>
+            </div>
+            <div class="user-active-balance">
+              <h3>CHECKOUT</h3>
+              <div>
+                <span>$145 813</span> <i class="fas fa-credit-card fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Second Class Column -->
+        <section class="second-class-row">
+          <div class="user-stats border">
+            <div id="chartContainer" style="height: 300px; width: 100%"></div>
+          </div>
+          <section>
+            <div class="Financial border">
+              <h2>Financial</h2>
+              <h4>April 7, 2023</h4>
+              <h4>Total Revenue <span class="percent-gain">+8.96%</span></h4>
+              <h2>$8765.90</h2>
+            </div>
+            <!--Upcoming Activity  -->
+            <section class="upcoming-cl border">
+              <div class="tr border"><h3>Upcoming Activity</h3></div>
+              <div class="tr border"><h3>Priority</h3></div>
+              <div class="tr border">
+                <h3>1</h3>
+                <button class="btn btn-c-1">Research with us</button>
+              </div>
+              <div class="tr border"><p>Low</p></div>
+              <div class="tr border">
+                <h3>2</h3>
+                <button class="btn btn-c-2">Draft Course Ather</button>
+              </div>
+              <div class="tr border"><p>High</p></div>
+              <div class="tr border">
+                <h3>3</h3>
+                <button class="btn btn-c-3">Google Meetings</button>
+              </div>
+              <div class="tr border"><p>Very High</p></div>
+            </section>
+            <button type="button" class="btn btn-fw">View All Activity</button>
+          </section>
+        </section>
+        <!-- Third Class Column -->
+        <section class="third-class-row">
+          <section>
+            <div class="description-checkout">
+              <ul>
+                <li>Checkout</li>
+                <li>Already Paid</li>
+                <li>Packed</li>
+                <li>Sent</li>
+                <li>Done</li>
+              </ul>
+              <select name="selection" class="select">
+                <option value="Last Month">Last Month</option>
+              </select>
+            </div>
+            <section class="description">
+              <div class="description-details">
+                <i class="fas fa-shopping-cart"></i>
+                <div>
+                  <h4>Brianna</h4>
+                  <span>brianna12@gmail.com</span>
+                </div>
+                <div>
+                  <h4>Google Analytics</h4>
+                  <h5>Online Course</h5>
+                </div>
+                <span>$1500.00</span>
+                <button class="btn">View More</button>
+              </div>
+              <div class="description-details">
+                <i class="fas fa-shopping-cart"></i>
+                <div>
+                  <h4>Evanian</h4>
+                  <span>evann@gmail.com</span>
+                </div>
+                <div>
+                  <h4>Apache Discovery</h4>
+                  <h5>Online Course</h5>
+                </div>
+                <span>$3500.00</span>
+                <button class="btn">View More</button>
+              </div>
+              <div class="description-details">
+                <i class="fas fa-shopping-cart"></i>
+                <div>
+                  <h4>Vally</h4>
+                  <span>vallywa@gmail.com</span>
+                </div>
+                <div>
+                  <h4>Docker</h4>
+                  <h5>Online Course</h5>
+                </div>
+                <span>$4500.00</span>
+                <button class="btn">View More</button>
+              </div>
+              <div class="description-details">
+                <i class="fas fa-shopping-cart"></i>
+                <div>
+                  <h4>Jasmine</h4>
+                  <span>jacy@gmail.com</span>
+                </div>
+                <div>
+                  <h4>Google Ads</h4>
+                  <h5>Online Course</h5>
+                </div>
+                <span>$1400.00</span>
+                <button class="btn">View More</button>
+              </div>
+              <div class="description-details">
+                <i class="fas fa-shopping-cart"></i>
+                <div>
+                  <h4>Estafania</h4>
+                  <span>esty@gmail.com</span>
+                </div>
+                <div>
+                  <h4>DOM & BOM</h4>
+                  <h5>Online Course</h5>
+                </div>
+                <span>$1500.00</span>
+                <button class="btn">View More</button>
+              </div>
+            </section>
+          </section>
+          <!-- Audience -->
+          <section class="audience border">
+            <h3>Top Location For Audience</h3>
+            <div class="audience-country">
+              <img
+                src="./images/swt-4.jpg
+              "
+                alt=""
+              />
+              <div>
+                <h4>United States</h4>
+                <meter
+                  value="94"
+                  class="stats-analysis stats-1"
+                  max="100"
+                  min="10"
+                  optimum="94"
+                  high="96"
+                  low="30"
+                >
+                  94%
+                </meter>
+              </div>
+            </div>
+            <div class="audience-country">
+              <img
+                src="./images/swt-4.jpg
+              "
+                alt=""
+              />
+              <div>
+                <h4>South Korea</h4>
+                <meter
+                  value="50"
+                  class="stats-analysis stats-2"
+                  max="100"
+                  min="10"
+                  optimum="50"
+                  high="96"
+                  low="30"
+                >
+                  50%
+                </meter>
+              </div>
+            </div>
+            <div class="audience-country">
+              <img
+                src="./images/swt-4.jpg
+              "
+                alt=""
+              />
+              <div>
+                <h4>Canada</h4>
+                <meter
+                  value="73"
+                  class="stats-analysis stats-3"
+                  max="100"
+                  min="10"
+                  optimum="73"
+                  high="96"
+                  low="30"
+                >
+                  73%
+                </meter>
+              </div>
+            </div>
+            <div class="audience-country">
+              <img
+                src="./images/swt-4.jpg
+              "
+                alt=""
+              />
+              <div>
+                <h4>Mexico</h4>
+                <meter
+                  value="96"
+                  class="stats-analysis stats-4"
+                  max="100"
+                  min="10"
+                  optimum="96"
+                  high="99"
+                  low="30"
+                >
+                  96%
+                </meter>
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+    </main>
+    <script src="./JS/script.js"></script>
+    <script src="./JS/chart.js"></script>
+  </body>
+</html>
